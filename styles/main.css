@@ -1,0 +1,54 @@
+body {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.test {
+    border: 5px solid #20d36e;
+}
+.test:hover {
+    border-color: rgb(69, 5, 171);
+}
+.container {
+    width: 1100px;
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+.container > .test1a :hover {
+    font-size: 2em;
+    background-color: rgb(16, 205, 230);
+}
+.test2 :nth-child(3n) {
+    font-size: 2em;
+}
+.test2 :first-child {
+    color: blueviolet;
+}
+.test2 :last-child {
+    color: rgb(226, 192, 43);
+}
+.test2 :empty {
+    width: 70px;
+    height: 20px;
+    background-color: rgb(159, 216, 216);
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 1100px;
+    grid-template-rows: auto;
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.container2 > .test3 :nth-child(2n) {
+    background-color: rgb(98, 240, 240);
+}
+.container2 > .test3 :nth-child(2n-1) {
+    background-color: rgb(98, 178, 240);
+}
+.test4 :not(.active) {
+    background-color: rgb(233, 109, 187);
+}
